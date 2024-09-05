@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<root>
+    <packet name="TSC1 - Torque/Speed Control 1" pgn = "0000">
+        <spn name="0695 - Engine Override Control Mode">
+            <position>0.0</position>
+            <lenght>2</lenght>
+        </spn>
+        <spn name="0696 - Engine Requested Speed Control Conditions">
+            <position>0.2</position>
+            <lenght>2</lenght>
+        </spn>
+        <spn name="0897 - Override Control Mode Priority">
+            <position>0.4</position>
+            <lenght>2</lenght>
+        </spn>
+
+        <spn name="0898 - Engine Requested Speed/Speed Limit">
+            <position>1.0</position>
+            <lenght>16</lenght>
+
+            <unit>rpm</unit>
+            <conversion>x/8</conversion>
+        </spn>
+
+        <spn name="0518 - Engine Requested Torque/Torque Limit">
+            <position>3.0</position>
+            <lenght>8</lenght>
+
+            <unit>%</unit>
+            <conversion>x * 1</conversion>
+        </spn>
+
+        <spn name="3349 - TSC1 Transmission Rate">
+            <position>4.0</position>
+            <lenght>4</lenght>
+        </spn>
+        <spn name="3350 - TSC1 Control Purpose">
+            <position>4.4</position>
+            <lenght>4</lenght>
+        </spn>
+
+        <spn name="4191 - Engine Requested Torque (Fractional)">
+            <position>5.0</position>
+            <lenght>8</lenght>
+        </spn>
+
+        <spn name="4206 - Message Counter">
+            <position>6.0</position>
+            <lenght>4</lenght>
+        </spn>
+        <spn name="4207 - Message Checksum">
+            <position>6.4</position>
+            <lenght>4</lenght>
+        </spn>
+    </packet>
+</root>
